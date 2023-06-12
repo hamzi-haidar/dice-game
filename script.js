@@ -12,8 +12,6 @@ const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 
-console.log('helooo');
-
 let scores, currentScore, activePlayer, playing;
 //starting conditions
 const init = function () {
@@ -65,7 +63,7 @@ btnHold.addEventListener('click', function () {
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
 
-    if (scores[activePlayer] >= 10) {
+    if (scores[activePlayer] >= 100) {
       // let nonActivePlayer = activePlayer === 1 ? 0 : 1;
 
       playing = false;
